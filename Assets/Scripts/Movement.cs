@@ -1,7 +1,9 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 using System.Collections;
+using System.Collections.Generic;
     
 [RequireComponent(typeof(Rigidbody2D))]
 
@@ -109,6 +111,11 @@ public class Movement : MonoBehaviour
         }
     }
 
+public int GetCurrentHealth()
+{
+    return Mathf.RoundToInt(Health); 
+}
+
     public void Degat()
     {
         Health = Health - 1;
@@ -122,7 +129,7 @@ public class Movement : MonoBehaviour
             animator.SetTrigger("Death");
             StartCoroutine(RespawnJoueur());
             Health = 3;
-            
+
         }
     }
 
@@ -171,7 +178,7 @@ public class Movement : MonoBehaviour
         yield return new WaitForSeconds(delais);
 
         
-        transform.position = new Vector2(spawnAxeX, spawnAxeY);
+        SceneManager.LoadScene (sceneBuildIndex:2);
     }
 
  private IEnumerator RespawnJoueurScene()

@@ -22,6 +22,7 @@ public class End : MonoBehaviour
             Movement movement = other.collider.GetComponent<Movement>();
             if (movement != null)
             {
+                Debug.Log("nivesu fini");
                 movement.fin();
             }
         

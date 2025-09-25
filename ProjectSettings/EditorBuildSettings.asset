@@ -6,17 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MenuStart.unity
+    guid: a3c6d52e45317f841abdf65e1f51f3ea
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
     path: Assets/Pixel Adventure 1/Scenes/Demo.unity
     guid: 5c50df32dffd39b478ba50d52f49533d
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
-    guid: dbb10a07cf90e1e46bf66ae74eda1c47
-  - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: 4f1910431eb5d914784747c849aa2aa5
+    path: Assets/Scenes/Fin.unity
+    guid: 9f3ba3c82cd74f54ca96aeafe53296fd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
