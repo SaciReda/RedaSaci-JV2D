@@ -597,13 +597,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   sfxJump: {fileID: 8300000, guid: 5728a36e93d5a8a489b0bfea55aada9b, type: 3}
   sfxVictory: {fileID: 8300000, guid: 84d347d1d2ce6424d9c51454e6874f8f, type: 3}
-  sfxCheck: {fileID: 8300000, guid: 7ee41b6d2c39def4daa28b6f27744c0a, type: 3}
   spawnAxeX: -2.16
   spawnAxeY: 0.45
   delais: 1
   Health: 3
   code: 3
-  alive: 1
   characters:
   - {fileID: 1607812643}
   - {fileID: 935066318}
@@ -3338,7 +3336,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 2.27
+  orthographic size: 2.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3364,7 +3362,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.81, y: 1.08, z: -10}
-  m_LocalScale: {x: 6.431049, y: 29.724195, z: 7.431049}
+  m_LocalScale: {x: 7.431049, y: 29.724195, z: 7.431049}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4321,7 +4319,7 @@ Transform:
   m_GameObject: {fileID: 852505962}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.35, y: 2.086, z: 0}
+  m_LocalPosition: {x: -0.35, y: 2.099, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4443,7 +4441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f596bd38094ca5849a3667f1713fe0ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Checkpoint
-  sfxCheck: {fileID: 8300000, guid: 7ee41b6d2c39def4daa28b6f27744c0a, type: 3}
   checkpointPosition: {x: -2.7, y: 2.099}
 --- !u!1 &858236120
 GameObject:
@@ -4850,13 +4847,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   sfxJump: {fileID: 8300000, guid: 5728a36e93d5a8a489b0bfea55aada9b, type: 3}
   sfxVictory: {fileID: 8300000, guid: 84d347d1d2ce6424d9c51454e6874f8f, type: 3}
-  sfxCheck: {fileID: 8300000, guid: 7ee41b6d2c39def4daa28b6f27744c0a, type: 3}
   spawnAxeX: -2.16
   spawnAxeY: 0.45
   delais: 1
   Health: 3
   code: 2
-  alive: 1
   characters:
   - {fileID: 62143307}
   - {fileID: 1607812643}
@@ -7612,13 +7607,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   sfxJump: {fileID: 8300000, guid: 5728a36e93d5a8a489b0bfea55aada9b, type: 3}
   sfxVictory: {fileID: 8300000, guid: 84d347d1d2ce6424d9c51454e6874f8f, type: 3}
-  sfxCheck: {fileID: 8300000, guid: 7ee41b6d2c39def4daa28b6f27744c0a, type: 3}
   spawnAxeX: -2.16
   spawnAxeY: 0.45
   delais: 1
   Health: 3
   code: 1
-  alive: 1
   characters:
   - {fileID: 935066318}
   - {fileID: 62143307}
@@ -7780,7 +7773,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.16495824, g: 0.8962264, b: 0, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -7816,7 +7809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.087931626, b: 0.087931626, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7925,7 +7918,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.67, y: 2.03}
+  m_Offset: {x: -0.38, y: 2.03}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}

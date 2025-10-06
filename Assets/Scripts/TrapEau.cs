@@ -2,33 +2,23 @@ using UnityEngine;
 
 public class TrapEau : MonoBehaviour
 {
-    public float spawnAxeX = -2.16f;
-    public float spawnAxeY = 0.2f;
-    public float delais = 1f; // le temps que l'animation joue avant que le respawn s'Acctionne 
+    public Movement players;
+    public float delais = 1f; 
     
     
 
     private void OnTriggerEnter2D(Collider2D other)
+{
+    if (other.CompareTag("Player") && other.GetComponent<Movement>().code != 1)
     {
-        
-        if (other.CompareTag("Player") && other.GetComponent<Movement>().code != 1)
+        Movement playerMovement = other.GetComponent<Movement>();
+        if (playerMovement != null)
         {
            
-            
-            Animator animation = other.GetComponent<Animator>();
-            //trigger trouver sur internet a l'air plus utile que un boolean
-            animation.SetTrigger("Death");
-            // coroutine une chose trouver sur internet pour delay le respawn et faire en sorte que l'animation joue
-            StartCoroutine(RespawnJoueur(other.gameObject));
+            playerMovement.RespawnPlayer(delais);
         }
     }
+}
 
-    private System.Collections.IEnumerator RespawnJoueur(GameObject player)
-    {
-        // attend que l'animation joue avec une seconde dans la variable delais
-        yield return new WaitForSeconds(delais);
-
-        //fait respawn le joueur
-        player.transform.position = new Vector2(spawnAxeX, spawnAxeY);
-    }
+    
 }
